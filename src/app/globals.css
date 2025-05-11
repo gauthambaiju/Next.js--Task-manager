@@ -1,27 +1,91 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    background-color: #ecececfd;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px #888888;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin-left: 4px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-size: 12px;
+}
+
+input {
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px #888888;
+    border-style: none;
+    background-color: #EEEEEE;
+
+}
+
+button {
+    border-style: none;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: #EEEEEE;
+    box-shadow: 0px 2px 6px #888888;
+    cursor: pointer;
+    color:#666666;
+}
+
+.taskBtn {
+    margin-left: 15px;
+}
+
+.taskList ul {
+  list-style: none;
+  padding: 0;
+}
+
+.taskList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+button:hover {
+    background-color: #DDDDDD;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
